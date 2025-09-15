@@ -86,4 +86,5 @@ else:
             prompt = "\n".join(st.session_state.chat_history) + "\n**AI:**"
             response_text = run_ai("Chat", prompt)
             st.session_state.chat_history.append(f"**AI:** {response_text}")
-            st.experimental_rerun()
+            st.rerun()   # ✅ updated
+
